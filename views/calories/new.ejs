@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <title>New Meal</title>
+</head>
+<body>
+    <h2>Enter a New Meal</h2>
+
+    <form action="/calories" method="POST">
+        <label>Name of Meal:
+            <input type="text" name="nameofMeal">
+        </label><br>
+
+        <label>Meal Number:
+            <select name="mealNumber">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+            </select>
+        </label><br>
+
+        <label>Total Calories (kcal):
+            <input type="text" name="totalCalories">
+        </label><br>
+
+        <label>Protein (g):
+            <input type="text" name="protein">
+        </label><br>
+
+        <label>Carbohydrates (g):
+            <input type="text" name="carbohydrates">
+        </label><br>
+
+        <label>Fats (g):
+            <input type="text" name="fats">
+        </label><br>
+        
+
+        <input type="submit" value="Add Meal">
+    </form>
+
+</body>
+</html>
