@@ -15,8 +15,9 @@ router.get('/add', ensureAuth, (req, res) => {
 router.post('/', ensureAuth, async (req, res) => {
   try {
     req.body.user = req.user.googleId
+    console.log(req.body)
     await Weight.create(req.body)
-    res.redirect('/dashboard')
+    res.redirect('/profile')
   } catch (err) {
     console.error(err)
     res.render('error/500')
@@ -53,7 +54,7 @@ router.delete('/:id', ensureAuth, async (req, res) => {
       res.redirect('/weight')
     } else {
       await Weight.remove({ _id: req.params.id })
-      res.redirect('/dashboard')
+      res.redirect('/profile')
     }
   } catch (err) {
     console.error(err)
@@ -65,7 +66,7 @@ router.delete('/:id', ensureAuth, async (req, res) => {
 // @route   GET /weight/edit/:id
 router.get('/edit/:id', ensureAuth, async (req, res) => {
   try {
-    const weight = await weight.findOne({
+    const weight = await Weight.findOne({
       _id: req.params.id,
     }).lean()
 
@@ -102,7 +103,7 @@ router.put('/:id', ensureAuth, async (req, res) => {
         runValidators: true,
       })
 
-      res.redirect('/dashboard')
+      res.redirect('/profile')
     }
   } catch (err) {
     console.error(err)

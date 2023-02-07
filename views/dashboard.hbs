@@ -1,5 +1,6 @@
 <h6>Dashboard</h6>
-<h3>Welcome {{name}}</h3>
+<h3>Welcome {{name}}!</h3>
+<p></p>
 <p>Here are your recorded days</p>
 {{#if days}}
 <table class="striped">
@@ -13,7 +14,7 @@
     </thead>
     <tbody>{{#each days}}
     <tr>
-        <td><a href="/day/{{_id}}">{{title}}</a></td>
+        <td>{{title}}</td>
         <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
         <td>
             <a href="/meals/add" class="btn btn-float">

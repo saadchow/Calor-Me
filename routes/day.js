@@ -15,6 +15,7 @@ router.get('/add', ensureAuth, (req, res) => {
 router.post('/', ensureAuth, async (req, res) => {
   try {
     req.body.user = req.user.googleId
+    console.log(req.body)
     await Day.create(req.body)
     res.redirect('/dashboard')
   } catch (err) {

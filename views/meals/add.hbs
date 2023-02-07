@@ -1,6 +1,6 @@
 <body>
 <h3>Add a Meal</h3>
-    <form action="/day/{{meal._id}}/meals" method="POST">
+    <form action="/day/{{_id}}/meals" method="POST">
        
         <label>Total Calories(kcal):
             <input type="text" name="totalCalories">
@@ -18,8 +18,7 @@
             <input type="text" name="fats">
         </label><br>
 
-
-        <input type="submit" value="Save" class="btn">
+        <a href="/dashboard" class="btn blue">Submit</a>
         <a href="/dashboard" class="btn orange">Cancel</a>
     </form>
 

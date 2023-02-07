@@ -1,23 +1,23 @@
-<h3>Hello {{name}}</h3>
+<h3>Hello {{name}}!</h3>
 
-<p>Here are your recorded weight measurements</p>
+<p>Here are your recorded weight measurements:</p>
 <div class="fixed-action-btn">
     <a href="/weight/add" class="btn-floating btn-large waves-effect waves-light green"><i class="fas fa-plus"></i></a>
 </div>
 
-{{#if weight}}
+{{#if weights}}
 <table class="striped">
     <thead>
         <tr>
-            <th>Title</th>
+            <th>Weight</th>
             <th>Date</th>
             <th>Actions</th>
             <th></th>
         </tr>
     </thead>
-    <tbody>{{#each weight}}
+    <tbody>{{#each weights}}
         <tr>
-            <td><a href="/weight/{{_id}}">{{title}}</a></td>
+            <td>{{weight}}</td>
             <td>{{formatDate createdAt 'MMMM Do YYYY, h:mm:ss a'}}</td>
             <td>
 

@@ -14,10 +14,32 @@ router.get('/add', ensureAuth, (req, res) => {
   res.render('meals/add')
 })
 
+// router.get('/add/:id', ensureAuth, async (req, res) => {
+//   try {
+//     const meal = await Day.findOne({
+//       _id: req.params.id,
+//     }).lean()
+
+//     if (!day) {
+//       return res.render('error/404')
+//     }
+
+//     if (day.user != req.user.googleId) {
+//       res.redirect('/day')
+//     } else {
+//       res.render('day/edit', {
+//         day,
+//       })
+//     }
+//   } catch (err) {
+//     console.error(err)
+//     return res.render('error/500')
+//   }
+// })
 // router.post('/', ensureAuth, async (req, res) => {
 //   try {
 //     req.body.user = req.user.googleId
-//     await Meal.create(req.body)
+//     await day.meal.create(req.body)
 //     res.redirect('/dashboard')
 //   } catch (err) {
 //     console.error(err)
