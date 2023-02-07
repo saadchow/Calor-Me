@@ -3,12 +3,18 @@
 Technologies Used: 
 
 Node.js
+
 Express.js
+
 MongoDB
+
 HTML
+
 CSS
 
+
 Calor-Me is a simple to use Meal & Macro tracking tool that is designed to assist you in meeting your health and wellness goals.
+
 
 Sign in to the app using your Google Account. 
 Add Days where you would like to track meals. Add additional info about the meal such as total calories, protien value, carbohydrates and fats.
@@ -17,8 +23,11 @@ CalorMe comes with an added feature of Weight Track! All your weight measurement
 All your app info is stored along with your Google Account. All your information is saved, sign in anywhere, using any web browser. 
 Good luck, stay healthy!
 
+
 Trello Board: https://trello.com/b/gncliXP4/calorie-tracker
+
 Calorme: 
+
 
 
 Future Improvements:
