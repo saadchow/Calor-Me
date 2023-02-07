@@ -7,6 +7,7 @@ Technologies Used:
 <li>MongoDB</li>
 <li>HTML</li>
 <li>CSS</li>
+<p></p>
 
 Calor-Me is a simple to use Meal & Macro tracking tool that is designed to assist you in meeting your health and wellness goals.
 
