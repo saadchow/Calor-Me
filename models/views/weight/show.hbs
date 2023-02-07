@@ -1,0 +1,21 @@
+<div class="row">
+    <div class="col s12 m8">
+        <h3>{{weight.title}}
+            <small>{{{editIcon weight.user user weight._id false}}}</small>
+        </h3>
+        <div class="card day">
+            <div class="card-content">
+                <span class="card-title">{{formatDate date 'MMMM Do YYYY, h:mm:ss a'}}</span>
+                {{{weight.body}}}
+            </div>
+        </div>
+    </div>
+    <div class="col s12 m4">
+        <div class="card center-align">
+            <div class="card-content">
+                <span class="card-title">{{weight.user.displayName}}</span>
+                <img src="{{weight.user.image}}" class="circle responsive-img img-small">
+            </div>
+        </div>
+    </div>
+</div>

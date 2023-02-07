@@ -1,0 +1,18 @@
+<h3>Edit Day</h3>
+<div class="row">
+    <form action="/day/{{day._id}}" method="POST" class="col s12">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title" value="{{day.title}}">
+                <label for="title">Title</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>

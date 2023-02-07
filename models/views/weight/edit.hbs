@@ -1,0 +1,22 @@
+<h3>Edit Weight</h3>
+<div class="row">
+    <form action="/weight/{{weight._id}}" method="POST" class="col s12">
+        <input type="hidden" name="_method" value="PUT">
+        <div class="row">
+            <div class="input-field">
+                <input type="text" id="title" name="title" value="{{weight.title}}">
+                <label for="title">Title</label>
+            </div>
+            <div class="input-field">
+                <input type="text" id="weight" name="weight">
+                <label for="weight">Weight:</label>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <input type="submit" value="Save" class="btn">
+            <a href="/dashboard" class="btn orange">Cancel</a>
+        </div>
+    </form>
+</div>
