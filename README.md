@@ -24,7 +24,7 @@ All your app info is stored along with your Google Account. All your information
 Good luck, stay healthy!
 
 
-<a href = " https://trello.com/b/gncliXP4/calorie-tracker">Trello Board</a>
+<a href="https://trello.com/b/gncliXP4/calorie-tracker">Trello Board</a>
 
 Calorme: 
 
