@@ -4,13 +4,25 @@ function newMeal(req, res, next) {
   res.render('calories/new');
 }
 
+function index(req, res, next) {
+  Calorie.find({}, function (err, calories) {
+    if (err) {
+      console.log(err);
+      res.redirect('/');
+    }
+
+    res.render('calories/index', {calories});
+  });
+}
+
 function create(req, res) {
   
- const meal = new Calorie(req.body);
+  const meal = new Calorie(req.body);
   meal.save (function(err, newCalorie) {
-    if (err) 
-    console.err(err); 
-    return res.render('/calories/new');
+    if (err) {
+      console.error(err); 
+      return res.render('/calories/new');
+    }
     console.log(newCalorie);
     res.redirect('/calories/new');
   });
@@ -20,5 +32,6 @@ function create(req, res) {
 module.exports = {
   new: newMeal,
   create: create,
+  index: index,
 };
 

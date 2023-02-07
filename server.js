@@ -1,5 +1,7 @@
 const createError = require('http-errors');
 const express = require('express');
+const dotenv = require('dotenv)');
+dotenv.config({path: './config/config.env'});
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
@@ -10,6 +12,7 @@ const usersRouter = require('./routes/users');
 const caloriesRouter = require('./routes/calories');
 
 const app = express();
+const PORT = process.env.port
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));

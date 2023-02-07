@@ -7,7 +7,8 @@ const caloriesCtrl = require('../controllers/calories');
 router.get('/new', caloriesCtrl.new);
 
 //POST
-router.post('/',caloriesCtrl.create)
+router.post('/', caloriesCtrl.create);
+router.get ('/', caloriesCtrl.index);
 
 module.exports = router;
 

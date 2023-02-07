@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 
 const Schema = mongoose.Schema;
 
+const daySchema = new Schema ({
+  currentDate: String,
+}, {
+  timestamps: true 
+})
+
 const calorieSchema = new Schema({
   nameOfMeal: String, 
   mealNumber: Number,
@@ -12,4 +18,3 @@ const calorieSchema = new Schema({
 });
 
 module.exports = mongoose.model('calorie', calorieSchema);
-
