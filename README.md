@@ -9,6 +9,10 @@ Technologies Used:
 <li>CSS</li>
 <p></p>
 
+<!-- <p align="center">
+<img width="460" height="460" src="https://i.imgur.com/8O51zZP.png">
+  </p> -->
+
 Calor-Me is a simple to use Meal & Macro tracking tool that is designed to assist you in meeting your health and wellness goals.
 
 
@@ -20,7 +24,7 @@ All your app info is stored along with your Google Account. All your information
 Good luck, stay healthy!
 
 
-Trello Board: https://trello.com/b/gncliXP4/calorie-tracker
+<a href = " https://trello.com/b/gncliXP4/calorie-tracker">Trello Board</a>
 
 Calorme: 
 
